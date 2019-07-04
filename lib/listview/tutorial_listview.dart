@@ -24,6 +24,17 @@ class TutorialListView extends StatelessWidget {
     );
   }
 
+  Widget groupText(int index) {
+    return Container(
+      child: Column(
+        children: <Widget>[
+          showName(index),
+          showDetail(index),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -33,6 +44,7 @@ class TutorialListView extends StatelessWidget {
           child: Row(
             children: <Widget>[
               showImageTutorial(index),
+              groupText(index),
             ],
           ),
         );
