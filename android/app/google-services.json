@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "448781875620",
+    "firebase_url": "https://masterungtutorial.firebaseio.com",
+    "project_id": "masterungtutorial",
+    "storage_bucket": "masterungtutorial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448781875620:android:82ea1eb1c0699b42",
+        "android_client_info": {
+          "package_name": "th.in.androidthai.master_ung_tutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448781875620-7ad2r9nkfl635jjiijv1vb902g969sde.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "th.in.androidthai.master_ung_tutorial",
+            "certificate_hash": "99f1de59cbbb9f0ab27aeb63c596235bc843b92a"
+          }
+        },
+        {
+          "client_id": "448781875620-ov8k8kaioahpp4ju1de7ip67fmesqleb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgs1GUhr07D7QsY6mLMdomljQx4jBrA_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448781875620-ov8k8kaioahpp4ju1de7ip67fmesqleb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
