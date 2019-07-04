@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:master_ung_tutorial/models/tutorial_model.dart';
+import 'package:master_ung_tutorial/screens/my_play_video.dart';
+import 'package:master_ung_tutorial/screens/video_list.dart';
 
 class TutorialListView extends StatelessWidget {
   List<TutorialModel> tutorialModels;
@@ -40,13 +42,22 @@ class TutorialListView extends StatelessWidget {
     return ListView.builder(
       itemCount: tutorialModels.length,
       itemBuilder: (context, int index) {
-        return Container(
-          child: Row(
-            children: <Widget>[
-              showImageTutorial(index),
-              groupText(index),
-            ],
+        return GestureDetector(
+          child: Container(
+            child: Row(
+              children: <Widget>[
+                showImageTutorial(index),
+                groupText(index),
+              ],
+            ),
           ),
+          onTap: () {
+            print('You Click ==> $index');
+
+            var videoRoute = MaterialPageRoute(
+                builder: (BuildContext context) => MyPlayVideo(urlVideoString: tutorialModels[index].pathVideo,));
+            Navigator.of(context).push(videoRoute);
+          },
         );
       },
     );
